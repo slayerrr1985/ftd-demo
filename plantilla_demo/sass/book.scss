@@ -1,0 +1,215 @@
+// version 0.1 - 031018
+
+$image_path: "../img/";
+
+$base_font_size: 16px;
+$base_font_color: #000000;
+
+$base_color: #7d87b5;
+$secondary_color: #97a0c3;
+
+$cover_background_color: #fec311;
+
+$featured_font_color: #737371;          // destacados
+$featured_background_color: #feeaba;
+$featured_title_color: #fec311;
+
+$important_background_color: #eef0f6;   // destacados gris soluciones
+$solution_font_color: #a8a8aa;          // ejercicios resueltos
+
+$conectado_title_color: #707072;
+
+$construindo_base_color: #7e88b6;   // construindo saberes section
+
+*{
+    box-sizing: content-box;
+}
+
+body{
+    font-size: $base_font_size;
+    color: $base_font_color;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.book-container{
+    display:block;
+    margin: 0 auto;
+    max-width: 65em;
+    padding: 0 2em;
+
+    .epigraph{
+        color: $base_color;
+        font-weight: bold;
+        font-size: 2.2em;
+        margin: 0.5em 0;
+    }
+
+    .subepigraph{
+        color: $secondary_color;
+        font-weight: bold;
+        font-size: 1.9em;
+        margin: 0.9em 0 0.5em 0;
+    }
+
+    .subepigraph2{
+        color: #000000;
+        font-weight: bold;
+        font-size: 1.8em;
+        margin: 0.9em 0 0.5em 0;
+    }    
+
+    p{
+        font-size: 1em;
+        line-height: 1.6em;
+        margin: 0;
+        padding: 0.1em 0;   
+        text-indent: 2rem;
+    }
+
+    .featured{
+        background-color: $featured_background_color;
+        border-radius: 15px 0 15px 0;
+        overflow: auto;
+        margin: 2em 0;   
+        display: inline-block; // keeps margins not collapsed
+        width:100%;
+    }
+
+    .saiba_mais{
+        background-image: url("#{$image_path}saiba.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        padding-top: 3.5em;
+        p{
+            color: $featured_font_color;
+            font-size: 0.9em;
+            padding: 0.1em 1rem 0.1em 2rem;
+            margin: 0;
+            text-indent: 1.5rem;
+        }
+        .footer{
+            font-size: 0.8em;
+            font-weight: bold;
+            text-align: right;
+            padding: 0.5rem 1rem;
+            margin: 0;
+            text-indent: 0;
+        }
+    }
+    .para_ler{
+        background: $featured_background_color url("#{$image_path}paraler_title.png") no-repeat left top;
+        padding-top: 4.8em;
+        p{
+            color: $featured_font_color;
+            font-size: 0.9em;
+            padding: 0.1em 1rem 0.1em 1rem;
+            text-indent: 1.5rem;
+            margin: 0;
+        }
+        .title{
+            font-size: 1.1em;
+            font-weight: bold;
+            text-indent: 0;
+        }
+        .subtitle{
+            font-size: 0.8em;
+            text-indent: 0;
+            padding-bottom: 0.5rem;
+        }        
+        .footer{
+            font-size: 0.8em;
+            font-weight: bold;
+            text-align: right;
+            padding: 1rem;
+            margin: 0;
+            text-indent: 0;
+        }
+
+    }
+
+    .conectado{
+        background-image: url("#{$image_path}conectado_title.png"), url("#{$image_path}conectado_bottom.png");
+        background-position: left top, left bottom;
+        background-repeat: no-repeat, no-repeat;
+        padding: 6.5em 0 3em 0;
+        margin: 4em 0;
+        .title{
+            color: $conectado_title_color;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-indent: 0;
+            margin-bottom: 0.5em;
+        }
+    }
+
+    .retomar{
+        border: solid $construindo_base_color 2px;
+        background-color: #ffffff;
+        position: relative;
+        overflow: visible;
+        .title{
+            //color: $construindo_base_color;
+            //font-size: 1.2em;
+            font-weight: bold;
+            text-indent: 0;
+            margin-bottom: 0.5em;
+        }
+        p:first-child{
+            margin-top: -58px;
+        }
+        p{
+            font-size: 0.9em;
+            padding: 0.1em 1rem 0.1em 1rem;
+            text-indent: 1.5rem;
+            margin: 0;
+        }        
+    }
+
+    .retomar::before{
+        content: url("#{$image_path}retomar.png");
+        height: 50px;
+        width: 50px;
+        position: relative;
+        top: -58px;
+        left: -16px;
+    }
+
+
+    .img_center{
+        display:block;
+        margin: 1.5em auto;
+        max-width: 100%
+    }
+
+    .img_responsive{
+        width:100%;
+        margin: 1em auto;
+    }    
+    
+}
+
+
+.cover.book-container{
+    background-color: $cover_background_color;
+    padding: 0 0 3em 0;
+    max-width: 100%;
+    .unit_title{
+        display:none;
+    }
+    .unit_img{
+        max-width:100%    
+    }
+    .img_portada{
+        display:block;
+        margin: 0 0 2em 0;
+        width: 100%
+    }    
+    p{
+        padding: 0.5em 1em;   
+        margin: 0 auto;
+        max-width: 65em;
+    }
+}
