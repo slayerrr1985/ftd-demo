@@ -196,7 +196,7 @@ body{
             display:none;
         }
         .lista_num{
-            counter-reset: num-counter;
+            counter-reset: num-counter attr(data-prefix);
             list-style:none;
         }
         .lista_num li:before {
@@ -239,12 +239,21 @@ body{
         display:block;
         margin: 1.5em auto;
         max-width: 100%;
+        img{
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
     }
 
     .img_responsive{
         width:100%;
         margin: 1em auto;
+        img{
+            width:100%;
+        }
     }    
+    
 
     .with_img_left{
         width:62%;
@@ -270,8 +279,10 @@ body{
 
     }
 
-    .destacado + p,
-    .destacado + section,
+    .featured + p,
+    .featured + section,
+    multimedia + .epigraph,
+    multimedia + .subepigraph,
     multimedia + p,
     multimedia + section{
         clear: both;

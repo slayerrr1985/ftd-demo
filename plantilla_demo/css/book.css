@@ -130,7 +130,7 @@ body {
     .book-container .atividades .epigraph {
       display: none; }
     .book-container .atividades .lista_num {
-      counter-reset: num-counter;
+      counter-reset: num-counter attr(data-prefix);
       list-style: none; }
     .book-container .atividades .lista_num li:before {
       content: counter(num-counter,decimal) ". ";
@@ -158,9 +158,15 @@ body {
     display: block;
     margin: 1.5em auto;
     max-width: 100%; }
+    .book-container .img_center img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto; }
   .book-container .img_responsive {
     width: 100%;
     margin: 1em auto; }
+    .book-container .img_responsive img {
+      width: 100%; }
   .book-container .with_img_left {
     width: 62%;
     float: right; }
@@ -178,8 +184,10 @@ body {
         margin: 1.5em auto;
         width: 65%;
         float: none; } }
-  .book-container .destacado + p,
-  .book-container .destacado + section,
+  .book-container .featured + p,
+  .book-container .featured + section,
+  .book-container multimedia + .epigraph,
+  .book-container multimedia + .subepigraph,
   .book-container multimedia + p,
   .book-container multimedia + section {
     clear: both; }
