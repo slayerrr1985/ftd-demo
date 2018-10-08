@@ -125,6 +125,48 @@ body {
   .book-container .img_responsive {
     width: 100%;
     margin: 1em auto; }
+  .book-container .atividades {
+    background-image: url("../img/atividades_title.png"), url("../img/atividades_bottom.png");
+    background-position: left top, left bottom;
+    background-repeat: no-repeat, no-repeat;
+    padding: 5em 0 3em 0;
+    margin: 2em 0;
+    line-height: 1.4em; }
+    .book-container .atividades .epigraph {
+      display: none; }
+    .book-container .atividades .lista_num {
+      counter-reset: num-counter;
+      list-style: none; }
+    .book-container .atividades .lista_num li:before {
+      content: counter(num-counter,decimal) ". ";
+      counter-increment: num-counter;
+      margin-left: -1.5em;
+      padding-right: 0.4em;
+      color: #7d87b5;
+      font-weight: bold; }
+    .book-container .atividades .lista_num li {
+      padding-top: 0.7em;
+      padding-bottom: 0.7em;
+      margin-left: -0.5em; }
+    .book-container .atividades .lista_letras {
+      counter-reset: let-counter;
+      list-style: none; }
+    .book-container .atividades .lista_letras li {
+      padding-top: 0.7em;
+      padding-bottom: 0; }
+    .book-container .atividades .lista_letras li:before {
+      content: counter(let-counter,lower-latin) ")  ";
+      counter-increment: let-counter;
+      color: #000000;
+      font-weight: normal; }
+    .book-container .atividades .lista_roman {
+      counter-reset: rom-counter;
+      list-style: none; }
+    .book-container .atividades .lista_roman:before {
+      content: counter(rom-counter,upper-roman);
+      counter-increment: rom-counter;
+      color: #000000;
+      font-weight: normal; }
 
 .cover.book-container {
   background-color: #fec311;
