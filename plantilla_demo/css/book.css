@@ -12,7 +12,9 @@ body {
   display: block;
   margin: 0 auto;
   max-width: 65em;
-  padding: 0 2em; }
+  padding: 0 2em;
+  /* IMAGES */
+  /* LISTS */ }
   .book-container .epigraph {
     color: #7d87b5;
     font-weight: bold;
@@ -118,13 +120,6 @@ body {
     position: relative;
     top: -58px;
     left: -16px; }
-  .book-container .img_center {
-    display: block;
-    margin: 1.5em auto;
-    max-width: 100%; }
-  .book-container .img_responsive {
-    width: 100%;
-    margin: 1em auto; }
   .book-container .atividades {
     background-image: url("../img/atividades_title.png"), url("../img/atividades_bottom.png");
     background-position: left top, left bottom;
@@ -159,14 +154,51 @@ body {
       counter-increment: let-counter;
       color: #000000;
       font-weight: normal; }
-    .book-container .atividades .lista_roman {
-      counter-reset: rom-counter;
-      list-style: none; }
-    .book-container .atividades .lista_roman:before {
-      content: counter(rom-counter,upper-roman);
-      counter-increment: rom-counter;
-      color: #000000;
-      font-weight: normal; }
+  .book-container .img_center {
+    display: block;
+    margin: 1.5em auto;
+    max-width: 100%; }
+  .book-container .img_responsive {
+    width: 100%;
+    margin: 1em auto; }
+  .book-container .with_img_left {
+    width: 62%;
+    float: right; }
+    @media only screen and (max-width: 800px) {
+      .book-container .with_img_left {
+        width: 100%; } }
+  .book-container .img_side_left {
+    width: 35%;
+    float: left; }
+    .book-container .img_side_left img {
+      width: 100%; }
+    @media only screen and (max-width: 800px) {
+      .book-container .img_side_left {
+        display: block;
+        margin: 1.5em auto;
+        width: 65%;
+        float: none; } }
+  .book-container .destacado + p,
+  .book-container .destacado + section,
+  .book-container multimedia + p,
+  .book-container multimedia + section {
+    clear: both; }
+  .book-container .pie_negro {
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0; }
+  .book-container .lista_roman {
+    counter-reset: rom-counter;
+    list-style: none;
+    text-indent: 2rem; }
+  .book-container .lista_roman li {
+    margin-left: -2.5em;
+    line-height: 1.6em; }
+  .book-container .lista_roman li:before {
+    content: counter(rom-counter,upper-roman) ")  ";
+    counter-increment: rom-counter;
+    color: #000000;
+    font-weight: normal; }
 
 .cover.book-container {
   background-color: #fec311;

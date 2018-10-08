@@ -178,16 +178,11 @@ body{
     }
 
 
-    .img_center{
-        display:block;
-        margin: 1.5em auto;
-        max-width: 100%
-    }
 
-    .img_responsive{
-        width:100%;
-        margin: 1em auto;
-    }    
+
+
+  
+
 
     .atividades{
         background-image: url("#{$image_path}atividades_title.png"), url("#{$image_path}atividades_bottom.png");
@@ -235,19 +230,91 @@ body{
             font-weight: normal;
         }
 
-        .lista_roman {
-            counter-reset: rom-counter;
-            list-style:none
-        }
-        .lista_roman:before{
-            content: counter(rom-counter,upper-roman);
-            counter-increment: rom-counter;
-            color: $base_font_color;
-            font-weight: normal;
+
+    }
+
+    /* IMAGES */
+
+    .img_center{
+        display:block;
+        margin: 1.5em auto;
+        max-width: 100%;
+    }
+
+    .img_responsive{
+        width:100%;
+        margin: 1em auto;
+    }    
+
+    .with_img_left{
+        width:62%;
+        float:right;
+        @media only screen and (max-width: 800px) {
+            width:100%;
         }
     }
+
+    .img_side_left{
+        width:35%;
+        float:left;
+        img {
+            width: 100%;
+
+        }
+        @media only screen and (max-width: 800px) {
+            display:block;
+            margin: 1.5em auto;
+            width: 65%;
+            float: none;
+        }
+
+    }
+
+    .destacado + p,
+    .destacado + section,
+    multimedia + p,
+    multimedia + section{
+        clear: both;
+    }
+
+
+    .pie_negro{
+        font-size:0.8em;
+        padding:0;
+        margin:0;
+    }
+
+    .pie_azul{
+        
+    }
+
+
+    /* LISTS */
+
+    .lista_roman {
+        counter-reset: rom-counter;
+        list-style: none;
+        text-indent: 2rem;
+    }
+
+    .lista_roman li{
+        margin-left: -2.5em;
+        line-height: 1.6em;
+    }
+
+    .lista_roman li:before{
+        content: counter(rom-counter,upper-roman) ")  ";
+        counter-increment: rom-counter;
+        color: $base_font_color;
+        font-weight: normal;
+
+    }
+
+
     
 }
+
+
 
 
 .cover.book-container{
