@@ -24,7 +24,7 @@
   src: url("../fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700; }
 * {
-  box-sizing: content-box; }
+  box-sizing: border-box; }
 
 body {
   font-size: 17px;
@@ -39,7 +39,7 @@ body {
   font-family: "Roboto";
   display: block;
   margin: 0 auto;
-  max-width: 60em;
+  max-width: 64em;
   padding: 0 2em;
   /* IMAGES */
   /* LISTS */ }
@@ -202,7 +202,7 @@ body {
     background-image: url("../img/oficina_title.png");
     background-repeat: no-repeat;
     background-position: right top;
-    padding-top: 1em;
+    padding-top: 1.5em;
     padding-bottom: 1.5em; }
     .book-container .oficina .epigraph {
       font-size: 1.8em;
@@ -279,11 +279,21 @@ body {
       counter-increment: let-counter;
       color: #000000;
       font-weight: normal; }
+    .book-container .atividades .img_list {
+      margin: 1em 0;
+      padding: 0;
+      display: inline-block;
+      vertical-align: middle; }
+      .book-container .atividades .img_list img {
+        width: 100%; }
+    .book-container .atividades .inline_list li {
+      display: inline-block;
+      margin-right: 3em; }
   .book-container .enem {
     background-image: url("../img/enem_title.png");
     background-position: left top;
     background-repeat: no-repeat;
-    padding: 10em 2em 2em 2em;
+    padding: 8em 2em 2em 2em;
     margin: 2em 0;
     line-height: 1.4em; }
     .book-container .enem .epigraph {

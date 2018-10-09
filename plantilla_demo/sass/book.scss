@@ -62,7 +62,7 @@ $construindo_base_color: #7e88b6;   // construindo saberes section
 
 
 *{
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 body{
@@ -81,7 +81,7 @@ body{
 
     display:block;
     margin: 0 auto;
-    max-width: 60em;
+    max-width: 64em;
     padding: 0 2em;
 
     .epigraph{
@@ -297,7 +297,7 @@ body{
         background-image: url("#{$image_path}oficina_title.png");
         background-repeat: no-repeat;
         background-position: right top;
-        padding-top: 1em;
+        padding-top: 1.5em;
         padding-bottom: 1.5em;
         .epigraph{
             font-size:1.8em;
@@ -408,6 +408,20 @@ body{
             font-weight: normal;
         }
 
+        .img_list{
+            margin: 1em 0;
+            padding:0;
+            display:inline-block;
+            vertical-align: middle;
+            img{
+                width:100%;
+            }
+        }
+
+        .inline_list li{
+            display:inline-block;
+            margin-right: 3em;
+        }
 
     }
 
@@ -417,7 +431,7 @@ body{
         background-image: url("#{$image_path}enem_title.png");
         background-position: left top;
         background-repeat: no-repeat;
-        padding: 10em 2em 2em 2em;
+        padding: 8em 2em 2em 2em;
         margin: 2em 0;
         line-height: 1.4em;
 
@@ -561,6 +575,11 @@ body{
         }
     }
 
+
+
+
+
+
     .featured + p,
     .featured + section,
     multimedia + .epigraph,
@@ -614,6 +633,8 @@ body{
         font-weight: normal;
 
     }
+
+
 
 
     
