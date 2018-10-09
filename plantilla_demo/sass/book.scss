@@ -17,7 +17,7 @@ $featured_title_color: #fec311;
 $important_background_color: #eef0f6;   // destacados gris soluciones
 $solution_font_color: #a8a8aa;          // ejercicios resueltos
 
-$attribution_font_color: #a8a8aa;          // pie gris
+$attribution_font_color: #a8a8aa;       // pie gris
 
 $biografia_background_color: #eef0f6;   // biografia saberes section
 
@@ -116,8 +116,8 @@ body{
     .featured{
         background-color: $featured_background_color;
         border-radius: 15px 0 15px 0;
-        overflow: auto;
-        margin: 2em 0;   
+        //overflow: auto;
+        margin: 4em 0;   
         display: inline-block; // keeps margins not collapsed
         width:100%;
     }
@@ -128,11 +128,11 @@ body{
         background-position: left top;
         background-color: $biografia_background_color;
         padding-top: 4.2em;
-        padding-bottom: 1.2em;
+        padding-bottom: 1.5em;
         p{
             color: $base_font_color;
             font-size: 0.9em;
-            padding: 0.1em 1rem 0.1em 2rem;
+            padding: 0.1em 2rem 0.1em 2rem;
             margin: 0;
             text-indent: 1.5rem;
         }
@@ -151,13 +151,16 @@ body{
         background-image: url("#{$image_path}saiba.png");
         background-repeat: no-repeat;
         background-position: left top;
-        padding-top: 3.5em;
+        padding-top: 5em;
+        padding-bottom: 1em;
+        width:100%;
+
         p{
-            color: $featured_font_color;
             font-size: 0.9em;
-            padding: 0.1em 1rem 0.1em 2rem;
+            padding: 0.1em 2rem 0.1em 2rem;
             margin: 0;
             text-indent: 1.5rem;
+            display:inline-block;
         }
         .footer{
             font-size: 0.8em;
@@ -174,7 +177,7 @@ body{
         p{
             color: $featured_font_color;
             font-size: 0.9em;
-            padding: 0.1em 1rem 0.1em 1rem;
+            padding: 0.2em 1.2rem 0.2em 1.2rem;
             text-indent: 1.5rem;
             margin: 0;
         }
@@ -231,7 +234,7 @@ body{
         }
         p{
             font-size: 0.9em;
-            padding: 0.1em 1rem 0.1em 1rem;
+            padding: 0.2em 1.2rem 0.2em 1.2rem;
             text-indent: 1.5rem;
             margin: 0;
         }        
@@ -284,6 +287,81 @@ body{
   
 
 
+    .oficina{
+        border: 4px solid #fdc300;
+        border-radius: 0 75px 0 15px;
+        display: inline-block; // keeps margins not collapsed
+        width:100%;
+        margin: 2em auto;
+
+        background-image: url("#{$image_path}oficina_title.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        padding-top: 1em;
+        padding-bottom: 1.5em;
+        .epigraph{
+            font-size:1.8em;
+            margin: 0 11rem 1rem 2rem;
+        }
+
+        p{
+            line-height: 1.4em;
+            color: $base_font_color;
+            padding: 0.2em 2rem 0.2em 2rem;
+            margin: 0;
+            text-indent: 1.5rem;
+        }
+        .epigraph + p{
+            @media only screen and (min-width: 750px) {
+                margin-right: 120px;
+            }
+        }          
+        ul{
+            padding: 0 2rem 0 2rem;
+            margin: 0 0 1rem 2.8rem;
+            line-height: 1.4em;
+        }
+
+        ul li{
+            padding: 0.2em 0 0;
+        }
+
+        .procedimientos{
+            .title{
+                color: #000000;
+                margin-top:2em;
+            }
+            p{
+                color: #545454;
+                text-indent:0;
+            }
+            .lista_letras {
+                line-height: 1.4em;
+                counter-reset: let-counter;
+                list-style: none;
+                padding: 0.5em 2rem 0.5em 2rem;
+                margin: 0;
+            }
+
+            .lista_letras li{
+                padding: 0.2em 0 0.2em 2rem;
+                margin-left: -0.5em;
+                color: #545454;
+            }
+
+            .lista_letras li:before{
+                content: counter(let-counter,lower-latin) ")  ";
+                counter-increment: let-counter;
+                color: #545454;
+                font-weight: normal;
+                margin-left: -1.5em;
+                padding-right: 0.4em;
+            }
+        }
+
+        
+    }
+
     .atividades{
         background-image: url("#{$image_path}atividades_title.png"), url("#{$image_path}atividades_bottom.png");
         background-position: left top, right bottom;
@@ -333,6 +411,77 @@ body{
 
     }
 
+
+
+    .enem{
+        background-image: url("#{$image_path}enem_title.png");
+        background-position: left top;
+        background-repeat: no-repeat;
+        padding: 10em 2em 2em 2em;
+        margin: 2em 0;
+        line-height: 1.4em;
+
+        .epigraph{
+            display:none;
+        }
+
+        p{
+            text-indent:0;
+        }
+        .lista_num{
+            counter-reset: num-counter;
+            list-style:none;
+        }
+        .lista_num li:before {
+            content: counter(num-counter,decimal) ". ";
+            counter-increment: num-counter;
+            margin-left: -1.5em;
+            padding-right: 0.4em;
+            color: #000000;
+            font-weight: bold;        
+        }
+        .lista_num li{
+            padding-top:0.7em;
+            padding-bottom: 0.7em;
+            margin-left: -0.5em;
+        }
+
+        .lista_letras {
+             counter-reset: let-counter;
+             list-style: none
+        }
+
+        .lista_letras li{
+            padding-top:0.7em;
+            padding-bottom: 0;
+        }
+
+        .lista_letras li:before{
+            content: counter(let-counter,lower-latin) ")  ";
+            counter-increment: let-counter;
+            color: $base_font_color;
+            font-weight: normal;
+        }
+
+        .img_list{
+            margin:0;
+            padding:0;
+            display:inline-block;
+            vertical-align: middle;
+            img{
+                width:100%;
+            }
+        }
+
+        .inline_list li{
+            display:inline-block;
+            margin-right: 3em;
+        }
+
+
+    }
+
+
     /* IMAGES */
 
     .img_center{
@@ -344,6 +493,18 @@ body{
             max-width: 100%;
             display: block;
             margin: 0 auto;
+        }
+    }
+
+    .img_left{
+        display:block;
+        margin: 1.5em 0;
+        width: 100%;
+        max-width: 65em;
+        img{
+            max-width: 100%;
+            display: block;
+            margin: 0 0;
         }
     }
 

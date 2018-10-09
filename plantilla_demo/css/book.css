@@ -67,8 +67,7 @@ body {
   .book-container .featured {
     background-color: #feeaba;
     border-radius: 15px 0 15px 0;
-    overflow: auto;
-    margin: 2em 0;
+    margin: 4em 0;
     display: inline-block;
     width: 100%; }
   .book-container .biografia {
@@ -77,11 +76,11 @@ body {
     background-position: left top;
     background-color: #eef0f6;
     padding-top: 4.2em;
-    padding-bottom: 1.2em; }
+    padding-bottom: 1.5em; }
     .book-container .biografia p {
       color: #000000;
       font-size: 0.9em;
-      padding: 0.1em 1rem 0.1em 2rem;
+      padding: 0.1em 2rem 0.1em 2rem;
       margin: 0;
       text-indent: 1.5rem; }
     .book-container .biografia .footer {
@@ -95,13 +94,15 @@ body {
     background-image: url("../img/saiba.png");
     background-repeat: no-repeat;
     background-position: left top;
-    padding-top: 3.5em; }
+    padding-top: 5em;
+    padding-bottom: 1em;
+    width: 100%; }
     .book-container .saiba_mais p {
-      color: #737371;
       font-size: 0.9em;
-      padding: 0.1em 1rem 0.1em 2rem;
+      padding: 0.1em 2rem 0.1em 2rem;
       margin: 0;
-      text-indent: 1.5rem; }
+      text-indent: 1.5rem;
+      display: inline-block; }
     .book-container .saiba_mais .footer {
       font-size: 0.8em;
       font-weight: bold;
@@ -115,7 +116,7 @@ body {
     .book-container .para_ler p {
       color: #737371;
       font-size: 0.9em;
-      padding: 0.1em 1rem 0.1em 1rem;
+      padding: 0.2em 1.2rem 0.2em 1.2rem;
       text-indent: 1.5rem;
       margin: 0; }
     .book-container .para_ler .title {
@@ -158,7 +159,7 @@ body {
       margin-top: -58px; }
     .book-container .retomar p {
       font-size: 0.9em;
-      padding: 0.1em 1rem 0.1em 1rem;
+      padding: 0.2em 1.2rem 0.2em 1.2rem;
       text-indent: 1.5rem;
       margin: 0; }
   .book-container .retomar::before {
@@ -192,6 +193,58 @@ body {
     position: relative;
     top: -58px;
     left: -16px; }
+  .book-container .oficina {
+    border: 4px solid #fdc300;
+    border-radius: 0 75px 0 15px;
+    display: inline-block;
+    width: 100%;
+    margin: 2em auto;
+    background-image: url("../img/oficina_title.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-top: 1em;
+    padding-bottom: 1.5em; }
+    .book-container .oficina .epigraph {
+      font-size: 1.8em;
+      margin: 0 11rem 1rem 2rem; }
+    .book-container .oficina p {
+      line-height: 1.4em;
+      color: #000000;
+      padding: 0.2em 2rem 0.2em 2rem;
+      margin: 0;
+      text-indent: 1.5rem; }
+    @media only screen and (min-width: 750px) {
+      .book-container .oficina .epigraph + p {
+        margin-right: 120px; } }
+    .book-container .oficina ul {
+      padding: 0 2rem 0 2rem;
+      margin: 0 0 1rem 2.8rem;
+      line-height: 1.4em; }
+    .book-container .oficina ul li {
+      padding: 0.2em 0 0; }
+    .book-container .oficina .procedimientos .title {
+      color: #000000;
+      margin-top: 2em; }
+    .book-container .oficina .procedimientos p {
+      color: #545454;
+      text-indent: 0; }
+    .book-container .oficina .procedimientos .lista_letras {
+      line-height: 1.4em;
+      counter-reset: let-counter;
+      list-style: none;
+      padding: 0.5em 2rem 0.5em 2rem;
+      margin: 0; }
+    .book-container .oficina .procedimientos .lista_letras li {
+      padding: 0.2em 0 0.2em 2rem;
+      margin-left: -0.5em;
+      color: #545454; }
+    .book-container .oficina .procedimientos .lista_letras li:before {
+      content: counter(let-counter,lower-latin) ")  ";
+      counter-increment: let-counter;
+      color: #545454;
+      font-weight: normal;
+      margin-left: -1.5em;
+      padding-right: 0.4em; }
   .book-container .atividades {
     background-image: url("../img/atividades_title.png"), url("../img/atividades_bottom.png");
     background-position: left top, right bottom;
@@ -226,6 +279,52 @@ body {
       counter-increment: let-counter;
       color: #000000;
       font-weight: normal; }
+  .book-container .enem {
+    background-image: url("../img/enem_title.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 10em 2em 2em 2em;
+    margin: 2em 0;
+    line-height: 1.4em; }
+    .book-container .enem .epigraph {
+      display: none; }
+    .book-container .enem p {
+      text-indent: 0; }
+    .book-container .enem .lista_num {
+      counter-reset: num-counter;
+      list-style: none; }
+    .book-container .enem .lista_num li:before {
+      content: counter(num-counter,decimal) ". ";
+      counter-increment: num-counter;
+      margin-left: -1.5em;
+      padding-right: 0.4em;
+      color: #000000;
+      font-weight: bold; }
+    .book-container .enem .lista_num li {
+      padding-top: 0.7em;
+      padding-bottom: 0.7em;
+      margin-left: -0.5em; }
+    .book-container .enem .lista_letras {
+      counter-reset: let-counter;
+      list-style: none; }
+    .book-container .enem .lista_letras li {
+      padding-top: 0.7em;
+      padding-bottom: 0; }
+    .book-container .enem .lista_letras li:before {
+      content: counter(let-counter,lower-latin) ")  ";
+      counter-increment: let-counter;
+      color: #000000;
+      font-weight: normal; }
+    .book-container .enem .img_list {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      vertical-align: middle; }
+      .book-container .enem .img_list img {
+        width: 100%; }
+    .book-container .enem .inline_list li {
+      display: inline-block;
+      margin-right: 3em; }
   .book-container .img_center {
     display: block;
     margin: 1.5em auto;
@@ -235,6 +334,15 @@ body {
       max-width: 100%;
       display: block;
       margin: 0 auto; }
+  .book-container .img_left {
+    display: block;
+    margin: 1.5em 0;
+    width: 100%;
+    max-width: 65em; }
+    .book-container .img_left img {
+      max-width: 100%;
+      display: block;
+      margin: 0 0; }
   .book-container .img_responsive {
     width: 100%;
     margin: 1em auto; }
