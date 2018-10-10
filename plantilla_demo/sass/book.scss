@@ -98,6 +98,13 @@ body{
         margin: 1.2em 0 0.5em 0;
     }
 
+    .subepigraph.h4{
+        color: $secondary_color;
+        font-weight: bold;
+        font-size: 1.8em;
+        margin: 1.2em 0 0.5em 0;
+    }
+
     .subepigraph2{
         color: #000000;
         font-weight: bold;
@@ -111,6 +118,10 @@ body{
         margin: 0;
         padding: 0.3em 0;   
         text-indent: 2rem;
+    }
+
+    .text_center{
+        text-align:center;
     }
 
     .featured{
@@ -590,7 +601,7 @@ body{
     }
 
 
-    .attributtion_footer{
+    .attribution_footer{
         font-size:0.8em;
         padding:0;
         margin:0.5em;

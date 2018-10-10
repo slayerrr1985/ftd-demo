@@ -53,6 +53,11 @@ body {
     font-weight: bold;
     font-size: 1.9em;
     margin: 1.2em 0 0.5em 0; }
+  .book-container .subepigraph.h4 {
+    color: #97a0c3;
+    font-weight: bold;
+    font-size: 1.8em;
+    margin: 1.2em 0 0.5em 0; }
   .book-container .subepigraph2 {
     color: #000000;
     font-weight: bold;
@@ -64,6 +69,8 @@ body {
     margin: 0;
     padding: 0.3em 0;
     text-indent: 2rem; }
+  .book-container .text_center {
+    text-align: center; }
   .book-container .featured {
     background-color: #feeaba;
     border-radius: 15px 0 15px 0;
@@ -399,7 +406,7 @@ body {
   .book-container multimedia + p,
   .book-container multimedia + section {
     clear: both; }
-  .book-container .attributtion_footer {
+  .book-container .attribution_footer {
     font-size: 0.8em;
     padding: 0;
     margin: 0.5em;
