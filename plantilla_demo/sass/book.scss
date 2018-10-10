@@ -1,6 +1,8 @@
-// version 0.1 - 031018
+// version 0.2 - 101018
 
-$image_path: "../img/";
+//$image_path: "../img/";
+$image_path: "img/";
+$fonts_path: "fonts/";
 
 $base_font_size: 17px;
 $base_font_color: #000000;
@@ -27,36 +29,36 @@ $construindo_base_color: #7e88b6;   // construindo saberes section
 
 @font-face {
   font-family: "Roboto";
-  src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.eot");
-  src: url("../fonts/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
+  src: local(Roboto Thin), url("#{$image_path}roboto/Roboto-Thin.eot");
+  src: url("#{$image_path}roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("#{$image_path}roboto/Roboto-Thin.woff2") format("woff2"), url("#{$image_path}roboto/Roboto-Thin.woff") format("woff"), url("#{$image_path}roboto/Roboto-Thin.ttf") format("truetype");
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: local(Roboto Light), url("../fonts/roboto/Roboto-Light.eot");
-  src: url("../fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
+  src: local(Roboto Light), url("#{$image_path}roboto/Roboto-Light.eot");
+  src: url("#{$image_path}roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("#{$image_path}roboto/Roboto-Light.woff2") format("woff2"), url("#{$image_path}roboto/Roboto-Light.woff") format("woff"), url("#{$image_path}roboto/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: local(Roboto Regular), url("../fonts/roboto/Roboto-Regular.eot");
-  src: url("../fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  src: local(Roboto Regular), url("#{$image_path}roboto/Roboto-Regular.eot");
+  src: url("#{$image_path}roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("#{$image_path}roboto/Roboto-Regular.woff2") format("woff2"), url("#{$image_path}roboto/Roboto-Regular.woff") format("woff"), url("#{$image_path}roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/roboto/Roboto-Medium.eot");
-  src: url("../fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  src: url("#{$image_path}roboto/Roboto-Medium.eot");
+  src: url("#{$image_path}roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("#{$image_path}roboto/Roboto-Medium.woff2") format("woff2"), url("#{$image_path}roboto/Roboto-Medium.woff") format("woff"), url("#{$image_path}roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/roboto/Roboto-Bold.eot");
-  src: url("../fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  src: url("#{$image_path}roboto/Roboto-Bold.eot");
+  src: url("#{$image_path}roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("#{$image_path}roboto/Roboto-Bold.woff2") format("woff2"), url("#{$image_path}roboto/Roboto-Bold.woff") format("woff"), url("#{$image_path}roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 
@@ -73,7 +75,7 @@ body{
     padding: 0;
 }
 
-
+.xcontainer{
 .book-container{
     font-size: $base_font_size;
     color: $base_font_color;
@@ -674,4 +676,6 @@ body{
         margin: 0 auto;
         max-width: 65em;
     }
+}
+
 }
