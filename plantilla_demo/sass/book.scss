@@ -29,57 +29,56 @@ $construindo_base_color: #7e88b6;   // construindo saberes section
 
 @font-face {
   font-family: "Roboto";
-  src: local(Roboto Thin), url("#{$image_path}roboto/Roboto-Thin.eot");
-  src: url("#{$image_path}roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("#{$image_path}roboto/Roboto-Thin.woff2") format("woff2"), url("#{$image_path}roboto/Roboto-Thin.woff") format("woff"), url("#{$image_path}roboto/Roboto-Thin.ttf") format("truetype");
+  src: local(Roboto Thin), url("#{$fonts_path}roboto/Roboto-Thin.eot");
+  src: url("#{$fonts_path}roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("#{$fonts_path}roboto/Roboto-Thin.woff2") format("woff2"), url("#{$fonts_path}roboto/Roboto-Thin.woff") format("woff"), url("#{$fonts_path}roboto/Roboto-Thin.ttf") format("truetype");
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: local(Roboto Light), url("#{$image_path}roboto/Roboto-Light.eot");
-  src: url("#{$image_path}roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("#{$image_path}roboto/Roboto-Light.woff2") format("woff2"), url("#{$image_path}roboto/Roboto-Light.woff") format("woff"), url("#{$image_path}roboto/Roboto-Light.ttf") format("truetype");
+  src: local(Roboto Light), url("#{$fonts_path}roboto/Roboto-Light.eot");
+  src: url("#{$fonts_path}roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("#{$fonts_path}roboto/Roboto-Light.woff2") format("woff2"), url("#{$fonts_path}roboto/Roboto-Light.woff") format("woff"), url("#{$fonts_path}roboto/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: local(Roboto Regular), url("#{$image_path}roboto/Roboto-Regular.eot");
-  src: url("#{$image_path}roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("#{$image_path}roboto/Roboto-Regular.woff2") format("woff2"), url("#{$image_path}roboto/Roboto-Regular.woff") format("woff"), url("#{$image_path}roboto/Roboto-Regular.ttf") format("truetype");
+  src: local(Roboto Regular), url("#{$fonts_path}roboto/Roboto-Regular.eot");
+  src: url("#{$fonts_path}roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("#{$fonts_path}roboto/Roboto-Regular.woff2") format("woff2"), url("#{$fonts_path}roboto/Roboto-Regular.woff") format("woff"), url("#{$fonts_path}roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("#{$image_path}roboto/Roboto-Medium.eot");
-  src: url("#{$image_path}roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("#{$image_path}roboto/Roboto-Medium.woff2") format("woff2"), url("#{$image_path}roboto/Roboto-Medium.woff") format("woff"), url("#{$image_path}roboto/Roboto-Medium.ttf") format("truetype");
+  src: url("#{$fonts_path}roboto/Roboto-Medium.eot");
+  src: url("#{$fonts_path}roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("#{$fonts_path}roboto/Roboto-Medium.woff2") format("woff2"), url("#{$fonts_path}roboto/Roboto-Medium.woff") format("woff"), url("#{$fonts_path}roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("#{$image_path}roboto/Roboto-Bold.eot");
-  src: url("#{$image_path}roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("#{$image_path}roboto/Roboto-Bold.woff2") format("woff2"), url("#{$image_path}roboto/Roboto-Bold.woff") format("woff"), url("#{$image_path}roboto/Roboto-Bold.ttf") format("truetype");
+  src: url("#{$fonts_path}roboto/Roboto-Bold.eot");
+  src: url("#{$fonts_path}roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("#{$fonts_path}roboto/Roboto-Bold.woff2") format("woff2"), url("#{$fonts_path}roboto/Roboto-Bold.woff") format("woff"), url("#{$fonts_path}roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 
 
-*{
+.xcontainer{
     box-sizing: border-box;
-}
-
-body{
     font-size: $base_font_size;
     color: $base_font_color;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-}
+    *{
+        box-sizing: border-box;
+    }
 
-.xcontainer{
 .book-container{
     font-size: $base_font_size;
     color: $base_font_color;
     font-family: "Roboto";
+    box-sizing: border-box;
 
     display:block;
     margin: 0 auto;
@@ -124,6 +123,19 @@ body{
 
     .text_center{
         text-align:center;
+    }
+
+    .important_solution{
+        background-color: $important_background_color;
+        border-radius: 15px 0 15px 0;
+        margin: 1em 0;   
+        display: inline-block; // keeps margins not collapsed
+        width:100%;
+        p{
+            text-indent: 0;
+            padding: 1rem 1.2rem;
+            margin: 0;
+        }
     }
 
     .featured{
@@ -189,6 +201,37 @@ body{
         padding-top: 4.8em;
         p{
             color: $featured_font_color;
+            font-size: 0.9em;
+            padding: 0.2em 1.2rem 0.2em 1.2rem;
+            text-indent: 1.5rem;
+            margin: 0;
+        }
+        .title{
+            font-size: 1.1em;
+            font-weight: bold;
+            text-indent: 0;
+        }
+        .subtitle{
+            font-size: 0.8em;
+            text-indent: 0;
+            padding-bottom: 0.5rem;
+        }        
+        .footer{
+            font-size: 0.8em;
+            font-weight: bold;
+            text-align: right;
+            padding: 1rem;
+            margin: 0;
+            text-indent: 0;
+        }
+
+    }
+    .para_assistir{
+        background: $featured_background_color url("#{$image_path}para_assistir_title.png") no-repeat left top;
+        padding-top: 4.8em;
+        padding-bottom: 1em;
+        p{
+            color: $base_font_color;
             font-size: 0.9em;
             padding: 0.2em 1.2rem 0.2em 1.2rem;
             text-indent: 1.5rem;
@@ -385,6 +428,9 @@ body{
 
         .epigraph{
             display:none;
+        }
+        p{
+            text-indent:0;
         }
         .lista_num{
             counter-reset: num-counter;
