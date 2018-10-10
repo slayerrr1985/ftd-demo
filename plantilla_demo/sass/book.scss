@@ -16,7 +16,7 @@ $featured_font_color: #737371;          // destacados
 $featured_background_color: #feeaba;
 $featured_title_color: #fec311;
 
-$important_background_color: #eef0f6;   // destacados gris soluciones
+$t_background_color: #eef0f6;   // destacados gris soluciones
 $solution_font_color: #a8a8aa;          // ejercicios resueltos
 
 $attribution_font_color: #a8a8aa;       // pie gris
@@ -67,11 +67,33 @@ $construindo_base_color: #7e88b6;   // construindo saberes section
     box-sizing: border-box;
     font-size: $base_font_size;
     color: $base_font_color;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto";
     margin: 0;
     padding: 0;
+    line-height:initial;
     *{
         box-sizing: border-box;
+    }
+    section{
+        background: none;
+        border-radius: 0;
+        box-shadow: none;
+        position: inherit;
+        //top: 2em;
+    }
+
+    section:before{
+        border: none;
+        margin-left: 0;
+    }
+
+
+    a{
+        font-family: "Roboto";
+        color: $base_color;
+    }
+    ul,ol{
+        list-style-type: initial;
     }
 
 .book-container{
@@ -81,7 +103,7 @@ $construindo_base_color: #7e88b6;   // construindo saberes section
     box-sizing: border-box;
 
     display:block;
-    margin: 0 auto;
+    margin: 50px auto 100px auto;
     max-width: 64em;
     padding: 0 2em;
 
@@ -125,8 +147,8 @@ $construindo_base_color: #7e88b6;   // construindo saberes section
         text-align:center;
     }
 
-    .important_solution{
-        background-color: $important_background_color;
+    .t_solution{
+        background-color: $t_background_color;
         border-radius: 15px 0 15px 0;
         margin: 1em 0;   
         display: inline-block; // keeps margins not collapsed
@@ -136,6 +158,33 @@ $construindo_base_color: #7e88b6;   // construindo saberes section
             padding: 1rem 1.2rem;
             margin: 0;
         }
+    }
+
+    .act_button, .act_button_small{
+        background-color: $base_color;
+        color: #fff;
+        padding: 1em 2em;
+        text-decoration: none;
+        border-radius: 10px;
+        margin: 2em auto;
+        display: block;
+        width: 60%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .act_button_small{
+        font-size: 0.8em;
+        padding: 0.4em 1em;
+        margin: 0.1rem 0.1rem 1rem 0;
+        width: auto;
+        display: inline-block;
+        text-indent: 0;
+    }
+
+    
+    .act_button:hover, .act_button_small:hover{
+        background-color: $secondary_color;
     }
 
     .featured{
@@ -373,9 +422,10 @@ $construindo_base_color: #7e88b6;   // construindo saberes section
             }
         }          
         ul{
-            padding: 0 2rem 0 2rem;
-            margin: 0 0 1rem 2.8rem;
+            padding: 0 2rem 0 2rem!important;
+            margin: 0 0 1rem 2.8rem!important;
             line-height: 1.4em;
+            
         }
 
         ul li{
