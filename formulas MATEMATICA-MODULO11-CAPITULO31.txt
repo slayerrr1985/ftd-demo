@@ -1,0 +1,458 @@
+﻿pag. 24
+
+
+Retomar
+
+
+Semelhança de triângulos
+
+
+
+
+$\displaystyle \hat{A} \equiv \hat{D}$
+
+
+$\displaystyle \hat{B} \equiv \hat{E}$
+
+
+$\displaystyle \hat{C} \equiv \hat{F}$
+
+
+
+$\displaystyle \frac{a}{d} =\frac{b}{e} =\frac{c}{f}$
+
+
+
+pag. 25
+
+
+Da semelhança de triângulos, podemos concluir que:
+
+
+$\displaystyle \frac{AQ}{QB} =\frac{BP}{PC}$
+
+
+$\displaystyle \frac{y_{A} -y_{B}}{x_{A} -x_{B}} =\frac{y_{B} -y_{C}}{x_{B} -x_{C}}$
+
+
+$\displaystyle ( x_{A} -x_{B})( y_{B} -y_{C}) =( y_{A} -y_{B})( x_{B} -x_{C})$
+
+
+$\displaystyle x_{A} y_{B} -x_{A} y_{C} -x_{B} y_{B} +x_{B} y_{C} =y_{A} x_{B} -y_{A} x_{C} -y_{B} x_{B} +y_{B} x_{C}$
+
+
+$\displaystyle x_{A} y_{B} +x_{C} y_{A} +x_{B} y_{C} -( x_{C} y_{B} +x_{A} y_{C} +x_{B} y_{A}) =0$
+
+
+
+
+pag. 26
+
+A expressão indicada pela reorganização dos termos é o resultado do determinante
+
+
+$\displaystyle \begin{vmatrix}
+x_{A} & y_{A} & 1\\
+x_{B} & y_{B} & 1\\
+x_{C} & y_{C} & 1
+\end{vmatrix}$
+
+
+
+$\displaystyle \begin{vmatrix}
+x_{A} & y_{A} & 1\\
+x_{B} & y_{B} & 1\\
+x_{C} & y_{C} & 1
+\end{vmatrix} =0$
+
+
+
+
+Retomar
+
+Regra de Sarrus
+
+
+$\displaystyle A=\begin{pmatrix}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{pmatrix}$
+
+
+$\displaystyle det\ A=\begin{vmatrix}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{vmatrix}$
+
+
+
+$\displaystyle det\ A=a_{11} \bullet a_{22} \bullet a_{33} +a_{12} \bullet a_{23} \bullet a_{31} +a_{13} \bullet a_{21} \bullet a_{32} -( a_{13} \bullet a_{22} \bullet a_{31} +a_{11} \bullet a_{23} \bullet a_{32} +a_{12} \bullet a_{21} \bullet a_{33})$
+
+
+$\displaystyle \begin{vmatrix}
+x_{A} & y_{A} & 1\\
+x_{B} & y_{B} & 1\\
+x_{C} & y_{C} & 1
+\end{vmatrix}$
+
+
+
+$\displaystyle x_{A} y_{B} +x_{C} y_{A} +x_{B} y_{C} -( x_{C} y_{B} +x_{A} y_{C} +x_{B} y_{A})$
+
+
+pag. 29
+
+
+
+11.
+
+$\displaystyle -\frac{1}{2}$
+
+$\displaystyle -\frac{\sqrt{3}}{2}$
+
+$\displaystyle \frac{1}{2}$
+
+$\displaystyle \frac{\sqrt{2}}{2}$
+
+$\displaystyle \frac{\sqrt{3}}{2}$
+
+
+
+
+12.
+
+$\displaystyle A( 0,\ 2) ,B( −2,\ 4) ,\ C( 0,\ 6) ,\ A'( 0,\ 0) ,\ \left( 6\sqrt{2} ,0\right)$
+
+
+$\displaystyle B\hat{A} C\ =\ B'\hat{A} 'C'$
+
+
+$\displaystyle A\hat{C} \ B\ =\ A'\hat{C} 'B'$
+
+
+
+pag. 31
+
+
+
+
+
+Distância entre dois pontos
+
+debajo gráficos
+
+
+$\displaystyle d_{AB} =5\ –\ 1=4$
+
+
+$\displaystyle d_{AB} =2\ –\ ( –1) =3$
+
+
+$\displaystyle ( d_{AB})^{2} =2^{2} +2^{2} \Rightarrow d_{AB} =\sqrt{4+4} \Rightarrow d_{AB} =2\sqrt{2}$
+
+
+
+
+pag.32
+
+enunciado:
+
+$\displaystyle d^{2}_{AB} =( x_{B} -x_{A})^{2} +( y_{B} -y_{A})^{2}$
+
+
+$\displaystyle d^{2}_{AB} =\sqrt{( x_{B} -x_{A})^{2} +( y_{B} -y_{A})^{2}}$
+
+
+a) en gris claro
+
+$\displaystyle d_{AB} =\sqrt{( x_{B} -x_{A})^{2} +( y_{B} -y_{A})^{2}}$
+
+$\displaystyle d_{AB} =\sqrt{( 3-0)^{2} +( 4-2)^{2}}$
+
+$\displaystyle d_{AB} =\sqrt{3^{2} +2^{2}}$
+
+$\displaystyle d_{AB} =\sqrt{13}$
+
+
+
+b) en gris claro
+
+
+$\displaystyle d_{CD} =\sqrt{( x_{D} -x_{C})^{2} +( y_{D} -y_{C})^{2}}$
+
+$\displaystyle d_{CD} =\sqrt{( 3-( -2))^{2} +( -5-7)^{2}}$
+
+$\displaystyle d_{CD} =\sqrt{5^{2} +( -12)^{2}}$
+
+$\displaystyle d_{CD} =\sqrt{169}$
+
+$\displaystyle d_{CD} =13$
+
+
+pag. 35
+
+
+al lado del gráfico del teorema de Tales
+
+
+$\displaystyle \frac{PQ}{QR} =\frac{ST}{TV}$
+
+,
+
+$\displaystyle \frac{PR}{PQ} =\frac{SV}{ST}$
+
+e
+
+$\displaystyle \frac{PR}{QR} =\frac{SV}{TV}$
+
+
+
+en el texto
+
+
+$\displaystyle \overline{AB}$
+
+
+abajo:
+
+Como AM = MB, do teorema de Tales, temos:
+
+
+$\displaystyle \frac{AM}{MB} =\frac{A'M'}{M'B'} \Rightarrow 1=\frac{x_{M} -x_{A}}{x_{B} -x_{M}} \Rightarrow x_{B} -x_{M} =x_{M} -x_{A} \Rightarrow 2x_{M} =x_{A} +x_{B} \Rightarrow x_{M} =\frac{x_{A} +x_{B}}{2}$
+
+
+$\displaystyle \frac{AM}{MB} =\frac{A"M"}{M"B"} \Rightarrow 1=\frac{y_{M} -y_{A}}{y_{B} -y_{M}} \Rightarrow y_{B} -y_{M} =y_{M} -y_{A} \Rightarrow 2y_{M} =y_{A} +y_{B} \Rightarrow y_{M} =\frac{y_{A} +y_{B}}{2}$
+
+
+en gris
+
+$\displaystyle M\left(\frac{x_{A} +x_{B}}{2} ,\ \frac{y_{A} +y_{B}}{2}\right)$
+
+
+pag. 36
+
+dialogos
+
+abajo del todo
+
+
+$\displaystyle G\left(\frac{x_{A} +x_{B} +x_{C}}{3} ,\ \frac{y_{A} +y_{B} +y_{C}}{3}\right)$
+
+
+pag. 38
+
+19.
+
+$\displaystyle 500\sqrt{5} \ m.$
+
+$\displaystyle 1\ 000\sqrt{2} \ m.$
+
+$\displaystyle 500+500\sqrt{2} \ m.$
+
+
+
+
+Ejercicio 20.
+b=\frac{4}{3} a
+b=\frac{4}{3} a-\frac{7}{6}
+$\displaystyle b=\frac{4}{3} a+3$
+b=\frac{4}{3} a-\frac{3}{2}
+
+Página 39
+
+Ejercicio 21.
+10+\sqrt{29} +\sqrt{26}
+$\displaystyle 16+\sqrt{29} +\sqrt{26}$
+$\displaystyle 22+\sqrt{26}$
+$\displaystyle 17+2\sqrt{26}$
+$\displaystyle 17+\sqrt{29} +\sqrt{26}$
+
+Ejercicio 22.
+$\displaystyle \overline{AB}$
+
+$\displaystyle A( 2,10)$
+$\displaystyle B( 6,4)$
+
+$\displaystyle \overline{EF}$
+
+$\displaystyle E( 0,2)$
+$\displaystyle F( 7,3)$
+
+$\displaystyle \overline{GH}$
+
+$\displaystyle G( -15,12)$
+$\displaystyle H( 19,-9)$
+
+Ejercicio 23.
+
+$\displaystyle A( 3,6)$
+$\displaystyle B( -5,8)$
+$\displaystyle C( 4,-6)$
+
+
+Página 40
+
+Ejercicio 24.
+$\displaystyle P( 6,2)$
+$\displaystyle Q( 1,-5)$
+
+Ejercicio 25.
+$\displaystyle A( 3;5)$
+$\displaystyle B( 2;-6)$
+$\displaystyle C( -4;1)$
+
+$\displaystyle A'B'C'$
+
+Ejercicio 27.
+$\displaystyle A( 6,5)$
+$\displaystyle B( 5,17)$
+$\displaystyle C( -2,-1)$
+
+Ejercicio 28
+$\displaystyle A=( 0,0)$
+$\displaystyle B=( 0,6)$
+$\displaystyle C=( 4,3)$
+
+\frac{5}{3}
+$\displaystyle \frac{\sqrt{97}}{3}$
+$\displaystyle \frac{\sqrt{109}}{3}$
+$\displaystyle \frac{\sqrt{5}}{3}$
+\frac{10}{3}
+
+Ejercicio 29.
+$\displaystyle A( 2,6)$
+$\displaystyle B( 2,14)$
+$\displaystyle C( 10,14)$
+$\displaystyle D( 10,6)$
+
+Página 44
+
+Ejercicio 2
+$\displaystyle \overline{CG}$
+
+Página 45
+
+Ejercicio 4
+$\displaystyle E( -1,0)$
+$\displaystyle F( -2,-2)$
+$\displaystyle G( -1,-4)$
+$\displaystyle H( 0,-2)$
+
+Página 46
+
+Ejercicio 7
+$\displaystyle A=( 2,1)$
+$\displaystyle B=( 6,4)$
+
+$\displaystyle \overline{AB}$
+
+$\displaystyle d^{2} =3^{2} +4^{2} \Rightarrow d=5$
+
+Ejercicio 9
+5\left( 3\sqrt{5} +5\right) m
+\left( 3\sqrt{5} +5\right) m
+2\left( 3\sqrt{2} +7\right) m
+4\left( 3\sqrt{5} +5\right) m
+
+Ejercicio 10
+$\displaystyle A=( 2,0)$
+$\displaystyle B=\left( -1,\sqrt{3}\right)$
+C=\left( -1,-\sqrt{3}\right)
+
+$\displaystyle A\hat{B} C$
+
+Ejercicio 11
+$\displaystyle A=( –1,0)$
+$\displaystyle B=( 1,0)$
+$\displaystyle C=( x,y)$
+
+$\displaystyle \sqrt{2}$
+$\displaystyle \sqrt{3}$
+
+Página 47
+
+Ejercicio 12
+$\displaystyle A(-3,\-3)$
+$\displaystyle B(3,\1)$
+$\displaystyle C(-3,\3)$
+$\displaystyle D(-1,\-1)$
+
+$\displaystyle \overline{AB}$
+$\displaystyle \overline{BC}$
+$\displaystyle \overline{CD}$
+$\displaystyle \overline{DA}$
+
+Ejercicio 13
+( m\ –\ 1,\ 2)
+( 3,\ 5)
+( 4,\ 7)
+
+\frac{1}{2}
+\frac{3}{2}
+\frac{5}{2}
+\frac{7}{2}
+\frac{9}{2}
+
+Ejercicio 14
+$\displaystyle P =(a,\b)$
+$\displaystyle Q =(1,\3)$
+$\displaystyle R =(-1,\-1)$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
