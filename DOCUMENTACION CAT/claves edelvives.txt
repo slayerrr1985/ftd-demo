@@ -1,0 +1,112 @@
+User: edelvives
+Pass: 1IzadlHh
+
+
+user edelvives-dev
+pass wpbI!Y49
+
+
+
+SFTP
+servidor.oneclick.es
+oneclickservidor
+mquxH_X94O
+
+
+licencia adobe
+info@oneclick.es
+pA*kHf!N$15z"
+
+
+
+LIBRO DEMO
+User: oneclick
+Pass: geronimo
+
+
+http://www.edelvivesdigital.com/i2c/testupload/
+Usuario: admin1@user.com / Pass: admin1
+
+
+host: servidor.oneclick.es
+user: oneclickservidor
+pass: Yy_F8kssiYUcY 
+
+
+
+ABHIJIT - WEBMATRIXTECH
+ftp server: oneclick.ink2cloud.com
+user: oneclickprov1
+pw: 2QMoUscx
+
+
+
+VIJAY - ITADGROUP
+ftp server: oneclick.ink2cloud.com
+user: oneclickprov2
+pw: yKbqWN
+
+
+
+
+servidor oneclick.ink2cloud.com
+[17:25:01] Javier   Rodriguez: user1: oneclickprov1 pass: 2QMoUscx
+[17:25:14] Javier   Rodriguez: user2 oneclickprov2 pass: yKbqWN
+
+
+hMavJd3MWDVVLrD7bWbd
+
+
+
+
+
+
+https://edelvivesdigital.com.ar/preproduccion/
+
+antigua cuenta
+editorialadmin@oneclick.es
+rejas216
+
+cuenta nueva
+edelvives@oneclick.es
+rejas216
+
+
+
+para cuando estés, necesitamos desactivar el módulo del cuaderno de notas de los libros que no están terminados (el resto ya tenemos controlados como hacerlo)
+
+            <item identifier="ITEM-EV-1" isvisible="false">
+                <title>Evaluaciones</title>
+                <metadata>
+                    <module>evaluaciones</module>
+                </metadata>
+            </item>
+
+La cosa es que en los template ahora mismo no aparece ningún ítem relativo a esa tile, supongo que con incluirlo y ponerle el isvisible="false" ya valdría, pero no veo ninguno en el que salga así que no se como se llama
+
+
+
+
+
+
+
+
+
+
+LO VES
+svn://mundovirtual.oneclick.es/20161107_edelvives_lo_ves/
+
+Cat : https://lo-ves-dev.ink2cloud.com/cat
+Libro : svn://lo-ves-dev.ink2cloud.com/lo-ves-demo
+
+
+LETRILANDIA - MOLALALETRA
+svn://mundovirtual.oneclick.es/20170105_letrilandia/
+
+Cat : https://letrilandia-dev.ink2cloud.com/cat/
+Libro : svn://letrilandia-dev.ink2cloud.com/letrilandia-demo
+
+
+
+
+

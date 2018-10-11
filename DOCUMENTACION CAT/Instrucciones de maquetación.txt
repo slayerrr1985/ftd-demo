@@ -1,0 +1,102 @@
+﻿ESTRUCTURA BÁSICA DEL HTML
+--------------------------
+<html>
+<head>
+<meta charset="utf-8"/><meta name="book-editor" group="" order="" page="">
+<link href="book.css" rel="stylesheet" type="text/css">
+</head>
+<body class="xcontainer">
+	<div class="book-content-width hb-blue"></div>
+	<div class="book-content-width book-content-bg-color-white">
+
+		...
+		CONTENIDO
+		...
+
+	</div>
+</body>
+</html>
+
+
+INFORMACIÓN DEL HEAD
+--------------------
+Es obligatorio añadir en <head> cierta información. Una etiqueta <meta> con los atributos name, group, order y page.
+- El valor de name siempre será book-editor. De esta forma se distingue de otros <meta> que haya.
+
+- El valor de group es el número de unidad/trimestre y establece el orden general del HTML. El valor inicial es 1.
+
+- El valor de order es el número de página dentro del mismo grupo (ver anterior). El valor inicial es 1.
+
+- El valor de page es el número de la página inicial (pueden ser varias en un solo HTML) en la versión papel. Se usa para facilitar la identificación de los medias que se vayan a incluir en el HTML.
+
+Ejemplo:
+<meta name="book-editor" group="2" order="12" page="35">
+
+
+
+
+INFORMACIÓN DEL BODY
+--------------------
+En <body> es necesario utilizar ciertas etiquetas para la generación del manifiesto:
+- Se utiliza <h1> para indicar el título de unidad. No debe haber más de uno en el grupo correspondiente y debe estar en el primer HTML del grupo.
+
+- Se utiliza <h2> para indicar el título del epígrafe. Debe haber uno y solo uno en cada HTML. Lo mejor sería que esté al principio, después del <h1> si lo hay.
+
+- Se utiliza <h3> para indicar el título del subepígrafe. No es necesario que exista, pero puede repetirse. Deberían estar después del <h2>.
+
+
+OTRAS CONSIDERACIONES DE MAQUETACIÓN
+------------------------------------
+- La nomenclatura de los archivos que estamos siguiendo es la del número de página física correspondiente (página 187 -> 187.html, páginas 188, 189, 190 -> 188_189_190.html)
+
+- En cada archivo debe ir un epígrafe completo
+
+- Los títulos de las unidades se están maquetando sin la imagen, sólo el número y el texto
+ 
+- Todos los elementos deben llevar una clase que especifique su ancho para que queden bien alineados (en general, parrafo_2-3 en la parte de la izquierda).
+
+- Los elementos del lateral se maquetarán dentro de asides
+
+- Las imágenes deben ir siempre dentro de un figure si van a llevar asociado un deepzoom, timeline, presentation, etc. En el caso de ser sólo una imagen se sustituye la etiqueta <figure> por <multimedia> 
+
+
+
+INSERCIÓN DE ELEMENTOS MEDIA
+----------------------------
+
+DEEPZOOM:
+<figure>
+    <a href="../DEEPZOOM/FOLDER/content.deepzoom.json">
+        <img src="images/IMAGE.jpg" alt="TITLE">
+    </a>
+</figure>
+
+
+PRESENTATION:
+Van embebidas como widgets en lugar de la imagen correspondiente
+<section class="parrafo_2-3">
+  <widget class="widget" data-resourcetype="presentation"  data-href="PRESENTATION/U04_050_01/data.json" data-title="Proceso de producción" data-thumb="HTML/images/unidad_04/esquema_50.jpg">
+   
+  </widget>
+</section>
+
+TIMELINE:
+Se incluyen en la página correspondiente en la parte inferior del código. Van ocultos.
+<figure style="display:none" data-title="title" >
+ 	<a href="../TIMELINE/FOLDER/content.timeline.json"></a>
+</figure>
+
+VIDEOS:
+<figure data-thumb="THUMNAILS/THUMB.png">
+    <video width="320" height="240" controls>
+        <source src="../MEDIAS/VIDEO.mp4" type="video/mp4">
+        Tag 'video' no soportado.
+    </video>
+</figure>
+
+
+EJERCICIOS:
+Se incluyen en la página correspondiente en la parte inferior del código. Van ocultos.
+<article style="display:none;">
+    <a href="../ejercicios/EJERCICIO.html">TITLE</a>
+</article>

@@ -1,0 +1,13 @@
+Lengua y Literatura I		svn://edelvives_ar.ink2cloud.com/AR_LLI
+Biología I					svn://edelvives_ar.ink2cloud.com/AR_BIOI
+Ciencias Naturales I		svn://edelvives_ar.ink2cloud.com/AR_CNI
+Física y Química I			svn://edelvives_ar.ink2cloud.com/AR_FQI
+Lengua y Literatura II		svn://edelvives_ar.ink2cloud.com/AR_LLII
+Biología II					svn://edelvives_ar.ink2cloud.com/AR_BIOII
+Ciencias Sociales I			svn://edelvives_ar.ink2cloud.com/AR_CSI
+Lengua y Literatura III		svn://edelvives_ar.ink2cloud.com/AR_LLIII
+Geografía I					svn://edelvives_ar.ink2cloud.com/AR_GEOI
+Historia I					svn://edelvives_ar.ink2cloud.com/AR_HISI
+Historia II					svn://edelvives_ar.ink2cloud.com/AR_HISII
+Geografía II				svn://edelvives_ar.ink2cloud.com/AR_GEOII
+Física y Química II			svn://edelvives_ar.ink2cloud.com/AR_FQII

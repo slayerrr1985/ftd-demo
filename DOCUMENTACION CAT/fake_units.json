@@ -1,0 +1,39 @@
+{
+    "__comment_index": "Índice. Entre los incluidos aquí y los que sí esten en HTML, tendrían que estar todas las unidades o como mínimo una secuencia desde 1 hasta lo que haga falta.",
+    "__comment_title": "Título. El título de la unidad.",
+    "fake_units": [
+        {
+            "index": 2,
+            "title": "01 Garapen fasea. 1. atala"
+        },
+        {
+            "index": 3,
+            "title": "02 Garapen fasea. 2. atala "
+        },
+        {
+            "index": 4,
+            "title": "03 Azken fasea"
+        },
+        {
+            "index": 5,
+            "title": "04 Orokortze fasea "
+        },
+        {
+            "index": 6,
+            "title": "05 ERANSKINA I. Nola bilatu informazioa? "
+        },
+        {
+            "index": 7,
+            "title": "06 ERANSKINA II. Argudio motak eta adibideak "
+        },
+        {
+            "index": 8,
+            "title": "07 ERANSKINA III. Ulermen proba "
+        },
+        {
+            "index": 9,
+            "title": "# Kredituak "
+        }
+
+    ]
+}
